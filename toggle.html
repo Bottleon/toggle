@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" media="screen and (max-width:780px)" href="toggle.css">
+</head>
+
+<body>
+    <h1 class="title">Note Animal&Plant</h1>
+    <div class ="noteContainer">
+    <ul>
+        <div class = "animalContainer">
+        <li><a class="animalTitle" href="#" onclick="handleAnimalClick()">Animal</a></li><br>
+        <ol>
+            <div class= "animalList" id="animalToggle">
+            <li><a herf="#" onclick="lionShowImage()">Lion</a><ul class="hiddenLion" id="jsLionImage"><div class="wrapper"><img src="https://images.unsplash.com/photo-1573725342230-178c824a10f2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8bGlvbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><p class="text">사자는 대부분 무리지어 생활한다. 한 무리는 성숙한 젊은 수컷 1-3마리와 암컷 10마리, 늙은 암컷 5마리, 덜 성숙한 암컷 2마리,덜 성숙한 수컷 1마리, 한 살 이상의 새끼 1-2마리, 한 살 이하의 새끼
+            1-5마리로 이루어지는데, 이것을 프라이드(pride)라고 한다. 프라이드는 거의 일정한 행동권을 갖는데 보통 40-50km2 반경에서 이루어진다.</p></div></ul></li>
+            <li><a herf="#" onclick="tigerShowImage()">Tiger</a><ul class="hiddenTiger" id="jsTigerImage"><div class="wrapper"><img src="https://images.unsplash.com/photo-1600109136547-aaf9482dd4d7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHRpZ2VyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><p class="text">호랑이(虎狼이) 또는 범은 고양이과에 속하는 맹수다. 칡범 또는 갈범이라고도 하며, 이는 표범과 구별하여 일컫는 말이다. 어린 개체는 개호주라 부른다.[2] 고양이과 동물중 그 크기가 가장 크며, 스라소니나 표범과
+            재규어를 제외하면 유일하게 수영을 할 수 있다.(단, 재규어같은 경우에는 단지 사냥을 목적으로 수영을 할뿐 호랑이처럼 주기적으로 물에 들어가지는 않는다).</p></div></ul></li>
+            <li><a herf="#" onclick="elephantShowImage()">Elephant</a><ul class="hiddenElephant" id="jsElephantImage"><div class="wrapper"><img src="https://images.unsplash.com/photo-1570263849386-fafb59c56a1a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8ZWxlcGhhbnR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><p class="text">코끼리(Elephant, 象)는 장비목에서 유일하게 현존하는 과인 코끼리과를 구성하는 동물들의 총칭으로, 현생 육상동물 가운데서는 가장 몸집이 크다. 현재까지 확인된 현존종은 총 3종으로,
+            아프리카코끼리·아시아코끼리·둥근귀코끼리로 나뉜다. 이미 멸종한 매머드 또한 같은 과로 분류된다. 열대 및 일부 온대 기후를 보이는 사하라 이남 아프리카·남아시아·동남아시아 등지에 걸쳐 서식한다.</p></div></ul></li>
+            </div>
+        </ol>
+        </div>
+        <br>
+        <div class="plantContainer">
+        <li><a class="plantTitle" href="#" onclick="handlePlantClick()">Plant</a></li>
+        <ol><br>
+            <div class = "plantList" id ="plantToggle">
+            <li><a herf="#" onclick="lilyShowImage()">lily</a><ul class="hiddenLily" id="jsLilyImage"><div class="wrapper"><img src="https://images.unsplash.com/photo-1580595999172-787970a962d8?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8bGlseXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><p class="text">속명의 Lilium은 라틴어 ‘li(희다)’과 ‘lium(꽃)’의 합성어로 유럽에서 알려진 순백색의 Madona Lily에서 붙여짐.높이 2m까지 자라는 구근(球根) 식물로 구근은 인경(鱗莖)으로 둥글다. 인경은 희거나 연노란색이고 직경은 10cm 내외다. 잎의 길이는 10~18cm이며 피침형으로 표면은 광택이 나고 엽병(葉柄)은 없다. 꽃의
+            길이는 15~18cm로 5~7월에 순백색 또는 황록색을 띠며 옆으로 향해 핀다.
+            </p></div></ul></li>
+            <li><a herf="#" onclick="cosmosShowImage()">Cosmos</a><ul class="hiddenCosmos" id="jsCosmosImage"><div class="wrapper"><img src="https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fdbscthumb-phinf.pstatic.net%2F1757_000_1%2F20130117150954769_36X7RS3S5.jpg%2Fff6_55_i1.jpg%3Ftype%3Dw690_2%26wm%3DY%22&twidth=409&theight=530&opts=17"><p class="text">멕시코가 원산지이며 관상용으로 흔히 심는다. 줄기는 높이가 1∼2m이고 윗부분에서 가지가 갈라지며 털이 없다. 잎은 마주나고 2회 깃꼴로 갈라지며, 갈라진 조각은 줄 모양이다.
+            꽃은 6∼10월에 피고 가지와 줄기 끝에 두상화(頭狀花:꽃대 끝에 꽃자루가 없는 작은 꽃이 많이 모여 피어 머리 모양을 이룬 꽃)가 1개씩 달린다. 두상화는 지름이 6cm이고 6∼8개의 설상화와 황색의 관상화로 구성된다.</p></div></ul></li>
+            <li><a herf="#" onclick="roseShowImage()">Rose</a><ul class="hiddenRose" id="jsRoseImage"><div class="wrapper"><img src="https://images.unsplash.com/photo-1559563362-c667ba5f5480?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cm9zZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><p class="text">18세기 말에 아시아의 각 원종이 유럽에 도입되고 이들 유럽과 아시아 원종간의 교배가 이루어져 화색이나 화형은 물론 사계성이나 개화성 등 생태적으로 변화가 많은 품종들이 만들어졌다. 18세기 이전의 장미를
+            고대장미(old rose), 19세기 이후의 장미를 현대장미(modern rose)라 한다.
+            장미는 온대성의 상록관목으로 햇빛을 좋아하는 식물이다.</p></div></ul></li>
+            </div>
+        </ol>
+        </div>
+    </ul>
+    </div>
+    <script src="toggle.js"></script>
+</body>
+
+</html>
